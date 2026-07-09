@@ -54,7 +54,7 @@ body  {
 
 
 
-p {
+p, a, li {
   font-size: var(--font-size-base);
   margin-top: 0;
 }
@@ -99,8 +99,60 @@ main {
   color: var(--main-color);
 }
 
-.info {
+#response-form {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  margin-top: 0.25rem;
 }
 
-.contact {
+#response {
+  width: min(20rem, 70vw);
+  border: none;
+  border-bottom: 1px solid currentColor;
+  background: transparent;
+  padding: 0;
+  padding-bottom: 0.1rem;
+  color: inherit;
+  font: inherit;
+  font-size: var(--font-size-base);
+  line-height: 1.4;
+  outline: none;
+  appearance: none;
+}
+
+#response::placeholder {
+  color: inherit;
+  opacity: 0.7;
+}
+
+button[type="submit"] {
+  border: none;
+  background: transparent;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+  font-size: var(--font-size-base);
+  text-transform: lowercase;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+  background-color: yellow;
+  outline: none;
+}
+
+
+#form-status {
+  margin-top: 0.5rem;
+}
+
+
+#first-line {
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-shadow: 0 0 0.35px currentColor;
+  line-height: 1.2;
 }
